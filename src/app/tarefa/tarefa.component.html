@@ -1,0 +1,24 @@
+<div class="tarefa-card">
+  <div class="tarefa-header">
+    <h3 class="tarefa-titulo">{{ tarefa.titulo }}</h3>
+    <div class="tarefa-progresso">
+      <span class="progresso-texto">
+        {{ subtarefasConcluidas }} de {{ totalSubtarefas }} subtarefas concluídas
+      </span>
+      <div class="progresso-bar">
+        <div 
+          class="progresso-fill" 
+          [style.width.%]="totalSubtarefas > 0 ? (subtarefasConcluidas / totalSubtarefas) * 100 : 0">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="subtarefas-container">
+    <app-subtarefa 
+      *ngFor="let subtarefa of tarefa.subtarefas"
+      [subtarefa]="subtarefa"
+      (statusChanged)="onSubtarefaStatusChanged($event)">
+    </app-subtarefa>
+  </div>
+</div> 

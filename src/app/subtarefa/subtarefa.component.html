@@ -1,0 +1,13 @@
+<div class="subtarefa-item">
+  <label class="subtarefa-label">
+    <input 
+      type="checkbox" 
+      [checked]="subtarefa.concluida"
+      (change)="onCheckboxChange($event)"
+      class="subtarefa-checkbox"
+    >
+    <span class="subtarefa-descricao" [class.concluida]="subtarefa.concluida">
+      {{ subtarefa.descricao }}
+    </span>
+  </label>
+</div> 

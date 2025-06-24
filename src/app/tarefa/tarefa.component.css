@@ -1,0 +1,48 @@
+.tarefa-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.tarefa-header {
+  margin-bottom: 16px;
+}
+
+.tarefa-titulo {
+  margin: 0 0 12px 0;
+  color: #212529;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tarefa-progresso {
+  margin-top: 8px;
+}
+
+.progresso-texto {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 4px;
+}
+
+.progresso-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progresso-fill {
+  height: 100%;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+}
+
+.subtarefas-container {
+  margin-top: 12px;
+}
