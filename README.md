@@ -1,27 +1,52 @@
-# Subtask
+# Gerenciador de Tarefas com Subtarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Aplicação Angular para gerenciamento de tarefas e subtarefas, permitindo visualizar, marcar como concluídas e acompanhar o progresso de cada tarefa. Ideal para organização pessoal ou de equipes pequenas. Objetivo desta aplicação é estudar o uso de Data Binding no Angular.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Visualização de uma lista de tarefas, cada uma com suas subtarefas
+- Marcação de subtarefas como concluídas ou pendentes
+- Progresso visual de cada tarefa e estatísticas gerais
+- Interface moderna, responsiva e fácil de usar
+- Comunicação eficiente entre componentes Angular (pai, filho, neto)
 
-## Code scaffolding
+## Estrutura dos Componentes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **ListaTarefasComponent**: controla a lista de tarefas e estatísticas gerais
+- **TarefaComponent**: exibe uma tarefa e suas subtarefas
+- **SubtarefaComponent**: permite marcar subtarefas como concluídas
 
-## Build
+## Como rodar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 1. Clonando o repositório
 
-## Running unit tests
+```bash
+git clone <url-do-repositorio>
+cd subtask
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. Instalando as dependências
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 3. Executando a aplicação
 
-## Further help
+```bash
+npm start
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse em [http://localhost:4200](http://localhost:4200)
+
+## Scripts úteis
+
+- `npm start`: inicia o servidor de desenvolvimento
+- `ng build`: gera a build de produção
+- `ng test`: executa os testes unitários
+
+## Observações
+
+- O projeto utiliza Angular Standalone Components (Angular 17+)
+- Os dados são mockados apenas para demonstração
+- Sinta-se à vontade para customizar e evoluir a aplicação!
